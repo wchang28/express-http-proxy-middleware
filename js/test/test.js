@@ -35,7 +35,7 @@ var proxyRet = httpProxy.get({
     xfwd: true // turn on the x-forwarded-{xxx} headers
 });
 proxyRet.proxy.on("error", function (err) {
-    console.log("!!! Error: " + JSON.stringify(err));
+    console.error("!!! Error: " + JSON.stringify(err));
 }).on("proxyReq", function (proxyReq, req) {
     console.log("\n<<proxyReq>>, req.url=" + req.url);
     proxyReq.removeHeader("authorization");

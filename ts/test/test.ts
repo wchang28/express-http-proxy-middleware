@@ -44,7 +44,7 @@ let proxyRet = httpProxy.get({
 });
 
 proxyRet.proxy.on("error", (err: any) => {
-    console.log(`!!! Error: ${JSON.stringify(err)}`);
+    console.error(`!!! Error: ${JSON.stringify(err)}`);
 }).on("proxyReq", (proxyReq: http.ClientRequest, req: express.Request) => {
     console.log(`\n<<proxyReq>>, req.url=${req.url}`);
     proxyReq.removeHeader("authorization");
