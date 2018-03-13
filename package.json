@@ -1,0 +1,28 @@
+{
+  "name": "express-http-proxy-middleware",
+  "version": "1.0.0",
+  "description": "Express HTTP Proxy Middleware",
+  "main": "./js/index.js",
+  "types": "./js/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "node ./js/test/test.js"
+  },
+  "author": "Wen Chang",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wchang28/express-http-proxy-middleware.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@types/express": "^4.11.1",
+    "@types/http-proxy": "^1.16.0",
+    "@types/node": "^9.4.7",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "http-proxy": "^1.16.2"
+  },
+  "devDependencies": {
+    "typescript": "^2.7.2"
+  }
+}
